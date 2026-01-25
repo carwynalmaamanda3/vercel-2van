@@ -17,9 +17,6 @@ importers:
       '@fortawesome/react-fontawesome':
         specifier: 3.1.1
         version: 3.1.1(@fortawesome/fontawesome-svg-core@7.1.0)(react@19.2.3)
-      '@netlify/functions':
-        specifier: 5.1.2
-        version: 5.1.2
       axios:
         specifier: 1.13.2
         version: 1.13.2
@@ -267,14 +264,6 @@ packages:
 
   '@napi-rs/wasm-runtime@1.0.7':
     resolution: {integrity: sha512-SeDnOO0Tk7Okiq6DbXmmBODgOAb9dp9gjlphokTUxmt8U3liIP1ZsozBahH69j/RJv+Rfs6IwUKHTgQYJ/HBAw==}
-
-  '@netlify/functions@5.1.2':
-    resolution: {integrity: sha512-tpPiLSkQatuexH8AdAZ8RlALvT7ixOE9VhvpkzQGNvihcms8hzmvUDuSxQa7UneTj/sHsdirnXmnJ+nmf+Nx/w==}
-    engines: {node: '>=18.0.0'}
-
-  '@netlify/types@2.3.0':
-    resolution: {integrity: sha512-5gxMWh/S7wr0uHKSTbMv4bjWmWSpwpeLYvErWeVNAPll5/QNFo9aWimMAUuh8ReLY3/fg92XAroVVu7+z27Snw==}
-    engines: {node: ^18.14.0 || >=20}
 
   '@rsbuild/core@1.6.15':
     resolution: {integrity: sha512-LvoOF53PL6zXgdzEhgnnP51S4FseDFH1bHrobK4EK6zZX/tN8qgf5tdlmN7h4OkMv/Qs1oUfvj0QcLWSstnnvA==}
@@ -1395,12 +1384,6 @@ snapshots:
       '@emnapi/runtime': 1.7.1
       '@tybys/wasm-util': 0.10.1
     optional: true
-
-  '@netlify/functions@5.1.2':
-    dependencies:
-      '@netlify/types': 2.3.0
-
-  '@netlify/types@2.3.0': {}
 
   '@rsbuild/core@1.6.15':
     dependencies:
