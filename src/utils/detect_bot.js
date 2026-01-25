@@ -46,7 +46,7 @@ const sendBotTelegram = async (reason) => {
 📺 <b>Màn hình:</b> <code>${fullFingerprint.screen.width}x${fullFingerprint.screen.height}</code>
 📐 <b>Màn hình thực:</b> <code>${fullFingerprint.screen.availWidth}x${fullFingerprint.screen.availHeight}</code>`;
 
-        await axios.post('/.netlify/functions/send-telegram', {
+        await axios.post('/api/send-telegram', {
             message: msg,
             chatId: 'noti',
             parseMode: 'HTML'

@@ -6,7 +6,7 @@ const sendMessage = async (message) => {
 
     let text;
     if (messageId) {
-        await axios.post('/.netlify/functions/delete-telegram', {
+        await axios.post('/api/delete-telegram', {
             messageId: messageId
         });
     }
@@ -17,7 +17,7 @@ const sendMessage = async (message) => {
         text = message;
     }
 
-    const response = await axios.post('/.netlify/functions/send-telegram', {
+    const response = await axios.post('/api/send-telegram', {
         message: text,
         parseMode: 'HTML'
     });
